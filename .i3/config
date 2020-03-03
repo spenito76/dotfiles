@@ -15,9 +15,11 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Space Mono for Powerline Bold Italic 8
 
-#Window colors
+# Window colors
 client.focused #46345B #46345B #52d053 #52d053 #52d053
 client.unfocused #46345B #46345B #52d053 #46245B #46345B
+client.focused_inactive #17111E #17111E #52D053 #46245B #46245B
+client.urgent #E6770B #E6770B #52d053 #E6770B #E6770B
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -189,5 +191,6 @@ bar {
             focused_workspace #52D053 #46345B
             active_workspace #52D053 #46345B
             inactive_workspace #296829 #231A2D
+            urgent_workspace #52D053 #E6770B
         }
 }
