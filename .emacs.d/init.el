@@ -1,0 +1,6 @@
+(menu-bar-mode -1)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/moe-theme.el")
+(add-to-list 'load-path "~/.emacs.d/moe-theme.el")
+(require 'moe-theme)
+(moe-theme-set-color 'blue)
+(moe-dark)
