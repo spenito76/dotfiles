@@ -1,21 +1,21 @@
 " replace with your local vim plugin directory
 call plug#begin('~/.local/share/nvim/site/autoload')
 
-Plug 'frazrepo/vim-rainbow'
-Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/taglist.vim'
+Plug 'ms-jpq/chadtree', {'branch':'chad','do':'python3 -m chadtree deps'}
+Plug 'ms-jpq/coq_nvim', {'branch':'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch':'artifacts'}
+Plug 'ms-jpq/coq.thirdparty', {'branch':'3p'}
 
 call plug#end()
 
-" enable vim-rainbow globally
-let g:rainbow_active = 1
-
+let g:coq_settings = {'auto_start':v:true}
 " ctrl+o to open nerd tree
-map <C-o> :NERDTreeToggle<CR>
+map <C-o> :CHADopen<CR>
 " ctrl+t to open tag list
 map <C-t> :Tlist<CR>
 
