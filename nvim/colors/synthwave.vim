@@ -11,6 +11,7 @@
 "            d8888P                                                                 
 "                                                                                   
 " Test ALL THE SYNTAX!!!  so $VIMRUNTIME/syntax/hitest.vim
+" Modified by Spencer W. Smith to support background transparency
 set background=dark
 if version > 580
 	hi clear
